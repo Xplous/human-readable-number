@@ -33,12 +33,10 @@ module.exports = function toReadable(number) {
                 result = twentyDigits[numberEl[0]] + ' ' + tensPower + ' ' + twentyDigits[numberEl[2]];
             }
             } else if (numberEl[2] == '0') {
-                console.log('hell');
                 result = twentyDigits[numberEl[0]] + ' ' + tensPower + ' ' + tensMultiple[numberEl[1]];
             } else if (+(numberEl[1] + numberEl[2]) < 20) {
                 result = twentyDigits[numberEl[0]] + ' ' + tensPower + ' ' + twentyDigits[+(numberEl[1] + numberEl[2])];
             } else {
-                console.log(+(numberEl[1] + numberEl[2]));
                 result = twentyDigits[numberEl[0]] + ' ' + tensPower + ' ' + tensMultiple[numberEl[1]] + ' ' + twentyDigits[numberEl[2]];
             }
             break;
